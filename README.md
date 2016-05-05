@@ -10,6 +10,8 @@ A small, simple, low power circuit that turns practically any analog ammeter int
 
 ![3D PCB Rendering](./images/3D_view.png)
 
+![Cole Ammeter Displaying Lab Temperature](./images/analog_thermometer.png)
+
 Circuit Description
 ===================
 
@@ -60,13 +62,13 @@ Simply increase the power supply voltage until the needle is deflected full-scal
 
 < TODO: pictures of full-scale deflection and current meter reading >
 
-Since our scale in this case ranges from 0 to 50 degrees, and the current at the full-scale reading of 50 is 10uA, we can calculate how much current is required to move the needle by one degree on our 0-50 scale:
+Since our scale ranges from 0 to 50 degrees, and the current required for a full-scale reading of 50 degrees is 10uA, we can calculate how much current is required to move the needle by one degree on our 0-50 scale:
 
 ```
 10uA / 50 = 0.2uA
 ```
 
-So we need the current to increase by 0.2uA for a one degree increase in temperature. The AnalogThermometer circuit increases the voltage across resistor R7 by 10mV for each one degree celcius increase, so ohm's law tells us that resistor R7 must be:
+So we need the current to increase by 0.2uA for a one degree increase in temperature. The AnalogThermometer circuit increases the voltage across resistor R7 by 10mV for a one degree celcius increase, so ohm's law tells us that resistor R7 must be:
 
 ```
 10mV / 0.2uA = 50,000
