@@ -58,21 +58,23 @@ Unfortunately, the analog meter used in our example does not have this informati
 
 < TODO: schematic here >
 
-Simply increase the power supply voltage until the needle is deflected full-scale, then read the current measured by the current meter. In this case, it is 10uA:
+Simply increase the power supply voltage until the needle is deflected full-scale, then read the current measured by the current meter. In this case, it is 25uA:
 
-< TODO: pictures of full-scale deflection and current meter reading >
+![Meter Needle At Full Scale](./images/full_scale_reading.jpg)
+
+![Current Required to Drive Meter to Full Scale](./images/full_scale_current_consumption.jpg)
 
 Since our scale ranges from 0 to 50 degrees, and the current required for a full-scale reading of 50 degrees is 10uA, we can calculate how much current is required to move the needle by one degree on our 0-50 scale:
 
 ```
-10uA / 50 = 0.2uA
+25uA / 50 = 0.5uA
 ```
 
-So we need the current to increase by 0.2uA for a one degree increase in temperature. The AnalogThermometer circuit increases the voltage across resistor R7 by 10mV for a one degree celcius increase, so ohm's law tells us that resistor R7 must be:
+So we need the current to increase by 0.5uA for a one degree increase in temperature. The AnalogThermometer circuit increases the voltage across resistor R7 by 10mV for a one degree celcius increase, so ohm's law tells us that resistor R7 must be:
 
 ```
-10mV / 0.2uA = 50,000
+10mV / 0.5uA = 20,000
 ```
 
-The closest standard 1% resistor value is 49.9k ohms, so a 49.9k ohm resistor can be used for resistor R7. Resistors with tolerances of 1% or better are recommended.
+A 20k ohm resistor can be used for resistor R7. Resistors with tolerances of 1% or better are recommended.
 
