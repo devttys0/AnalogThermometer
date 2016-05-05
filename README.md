@@ -10,7 +10,7 @@ A small, simple, low power circuit that turns practically any analog ammeter int
 
 ![3D PCB Rendering](./images/3D_view.png)
 
-![Cole Ammeter Displaying Lab Temperature](./images/analog_thermometer.png)
+![Cole Ammeter Displaying Lab Temperature](./images/analog_thermometer.jpg)
 
 Circuit Description
 ===================
@@ -46,7 +46,7 @@ plate](https://www.youtube.com/watch?v=wbRx5cQZ8Ts&t=13m09s). **His videos are h
 
 Here is a simple example. This particular meter was manufactured with a scale of 0-50uA on the faceplate, which is ideal for our application as the temperature in degrees celcius can be read directly from the existing scale:
 
-< TODO: image here >
+![Exemplar ammeter](./images/50uA_Meter.jpg)
 
 Having settled on a scale of 0-50, all that is left is to determine how much current is required to deflect the needle full-scale. Some analog meters will have this value conveniently printed on them:
 
