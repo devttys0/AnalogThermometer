@@ -64,7 +64,7 @@ Simply increase the power supply voltage until the needle is deflected full-scal
 
 ![Current Required to Drive Meter to Full Scale](./images/full_scale_current_consumption.jpg)
 
-Since our scale ranges from 0 to 50 degrees, and the current required for a full-scale reading of 50 degrees is 10uA, we can calculate how much current is required to move the needle by one degree on our 0-50 scale:
+Since our scale ranges from 0 to 50 degrees, and the current required for a full-scale reading of 50 degrees is 25uA, we can calculate how much current is required to move the needle by one degree on our 0-50 scale:
 
 ```
 25uA / 50 = 0.5uA
