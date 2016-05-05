@@ -10,8 +10,13 @@ A small, simple, low power circuit that turns practically any analog ammeter int
 
 ![3D PCB Rendering](./images/3D_view.png)
 
+Circuit Description
+===================
+
+The AnalogThermometer circuit is based around a Microchip MCP9700A temperature sensor. An LTC1541 op-amp is used as a differential amplifier to remove the 500mV offset voltage from the MCP9700A's output voltage. Finally, the differential amplifier controls a simple NPN current sink, whose current varies linearly with temperature; this provides a constant current to drive the analog ammeter that is proportional to the ambient temperature.
+
 Circuit Construction
-======================================
+====================
 
 Circuit construction is largely the same for any analog meter, with only two design questions that must be answered:
 
