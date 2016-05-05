@@ -3,7 +3,7 @@ Building the AnalogThermometer circuit
 
 Circuit construction largely the same for any analog meter, with only two design questions that must be answered:
 
-1. Do you want to use all surface mount components, or do you perfer the MCP9700A temperature sensor to be a through-hole component?
+1. Do you want the MCP9700A temperature sensor to be a surface mount or a through-hole component?
 2. What resistor value should be used for resistor R7 in order to accurately display the temperature on your analog meter?
 
 Surface mount or through-hole?
