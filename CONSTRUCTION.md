@@ -36,7 +36,7 @@ Here is a simple example. This meter was manufactured with a scale of 0-50uA on 
 
 Having settled on a scale of 0-50, all that is required now is to determine how much current is required to deflect the needle full-scale. Some analog meters will have this value conveniently printed on them:
 
-< TODO: meter_fs_reading.png >
+![3D PCB Rendering](./images/meter_fs_reading.png)
 
 The text `FS=50UADC` on this meter tells us that 50uA of direct current will deflect the meter to its full-scale position.
 
