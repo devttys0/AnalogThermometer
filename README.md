@@ -1,19 +1,19 @@
 Analog Thermometer
 ===================
 
-A small, simple, low power circuit that turns practically any analog ammeter into an attractive temerature display.
+A small, simple, low power circuit that turns practically any analog ammeter into an attractive thermometer, displaying temperatures from 0-70C with a typical accuracy of +-1 degree celcius.
 
   * One inch square PCB size
   * Low cost (single quantity [components](./digikey_bom.csv): $7, OSHPark PCB: $5)
   * Runs from a single 2.5-5.5V supply, current consumption <15uA (plus analog meter current requirements)
-  * [Easily adapted](./CONSTRUCTION.md) to work with nearly any ammeter by changing a single resistor, and/or by adjusting a potentiometer
+  * Easily adapted to work with nearly any ammeter by changing a single resistor, and/or adjusting a potentiometer
 
 ![3D PCB Rendering](./images/3D_view.png)
 
 Circuit Construction
 ======================================
 
-Circuit construction largely the same for any analog meter, with only two design questions that must be answered:
+Circuit construction is largely the same for any analog meter, with only two design questions that must be answered:
 
 1. Do you want the MCP9700A temperature sensor to be a surface mount or a through-hole component?
 2. What resistor value should be used for resistor R7 in order to accurately display the temperature on your analog meter?
@@ -23,7 +23,7 @@ Surface mount or through-hole?
 
 Provisions have been made on the PCB for both the through-hole and surface mount versions of the MCP9700A temperature sensor. There is no technical advantage one way or the other, so the decision of which one to use is primarily determined by physical constraints / personal preference.
 
-In the schematic and on the PCB, U2 is the through-hole version (TO-92 package) and U3 is the surface mount (SOT-23) version. **Populate either U2 or U3, but not both!**
+In the schematic and on the PCB, U2 is the through-hole version (TO-92 package) and U3 is the surface mount version (SOT-23). **Populate either U2 or U3, but not both!**
 
 What value resistor do I use for R7?
 ------------------------------------
@@ -37,11 +37,11 @@ The preferred method is to leave the potentiometer RV1 unpopulated and calculate
 The amount of current that your analog meter requires is determined by the full-scale deflection current of your meter, and the scale printed on the meter's faceplate. Alan, W2AEW, has made some excellent videos on [finding the full-scale deflection current of a meter](https://www.youtube.com/watch?v=wbRx5cQZ8Ts&t=3m22s), as well as [printing custom scales for the face
 plate](https://www.youtube.com/watch?v=wbRx5cQZ8Ts&t=13m09s). **His videos are highly recommended if you are not familiar with analog meters**.
 
-Here is a simple example. This meter was manufactured with a scale of 0-50uA on the faceplate, which is an ideal for this application as the temperature in degrees celcius can be read directly from the existing scale:
+Here is a simple example. This particular meter was manufactured with a scale of 0-50uA on the faceplate, which is ideal for our application as the temperature in degrees celcius can be read directly from the existing scale:
 
 < TODO: image here >
 
-Having settled on a scale of 0-50, all that is required now is to determine how much current is required to deflect the needle full-scale. Some analog meters will have this value conveniently printed on them:
+Having settled on a scale of 0-50, all that is left is to determine how much current is required to deflect the needle full-scale. Some analog meters will have this value conveniently printed on them:
 
 ![3D PCB Rendering](./images/meter_fs_reading.png)
 
@@ -67,5 +67,5 @@ So we need the current to increase by 0.2uA for a one degree increase in tempera
 10mV / 0.2uA = 50,000
 ```
 
-The closest standard 1% resistor value is 49.9k ohms, so a 49.9k ohm resistor can be used for resistor R7.
+The closest standard 1% resistor value is 49.9k ohms, so a 49.9k ohm resistor can be used for resistor R7. Resistors with tolerances of 1% or better are recommended.
 
