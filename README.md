@@ -8,7 +8,11 @@ A small, simple, low power circuit that turns practically any analog ammeter int
   * Runs from a single 2.5-5.5V supply, current consumption <15uA (plus analog meter current requirements)
   * Easily adapted to work with nearly any ammeter by changing a single resistor, and/or adjusting a potentiometer
 
+3D rendering of the PCB design:
+
 ![3D PCB Rendering](./images/3D_view.png)
+
+A Cole DC ammeter displaying the current lab temperature of 20 degrees Celcius:
 
 ![Cole Ammeter Displaying Lab Temperature](./images/analog_thermometer.jpg)
 
