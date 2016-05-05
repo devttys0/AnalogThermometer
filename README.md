@@ -54,9 +54,9 @@ Having settled on a scale of 0-50, all that is left is to determine how much cur
 
 The text `FS=50UADC` on this meter tells us that 50uA of direct current will deflect the meter to its full-scale position.
 
-Unfortunately, the analog meter used in our example does not have this information printed on it, but it is easy to experimentally determine the full-scale current by placing a current meter in series between an adjustable voltage power supply and the analog meter:
+Unfortunately, the analog meter used in our example does not have this information printed on it, but it is easy to experimentally determine the full-scale current by placing a current meter in series between an adjustable voltage power supply and the analog meter. If you don't have an adjustable voltage source, a fixed voltage source with a variable resistor will work just as well:
 
-< TODO: schematic here >
+![Setup to Measure Full Scale Current](https://www.ibiblio.org/kuphaldt/electricCircuits/Exper/05165.png)
 
 Simply increase the power supply voltage until the needle is deflected full-scale, then read the current measured by the current meter. In this case, it is 25uA:
 
