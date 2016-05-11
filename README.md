@@ -5,21 +5,21 @@ A small, simple, low power circuit that turns practically any analog ammeter int
 
   * One inch square PCB size
   * Low cost (single quantity [components](./digikey_bom.csv): $7, OSHPark PCB: $5)
-  * Runs from a single 2.5-5.5V supply, current consumption <15uA (plus analog meter current requirements)
+  * Runs from a single 2.5-5.5V supply, typical current consumption <10uA (plus the analog ammeter's current requirements)
   * Easily adapted to work with nearly any ammeter by changing a single resistor, and/or adjusting a potentiometer
 
 3D rendering of the PCB design:
 
 ![3D PCB Rendering](./images/3D_view.png)
 
-A Cole DC ammeter displaying the current lab temperature of 20 degrees Celcius:
+A Cole DC ammeter displaying the lab temperature of 20 degrees Celcius:
 
 ![Cole Ammeter Displaying Lab Temperature](./images/analog_thermometer.jpg)
 
 Circuit Description
 ===================
 
-The AnalogThermometer circuit is based around a Microchip MCP9700A temperature sensor. An LTC1541 op-amp is used as a differential amplifier to remove the 500mV offset voltage from the MCP9700A's output voltage. Finally, the differential amplifier controls a simple NPN current sink, whose current varies linearly with temperature; this provides a constant current to drive the analog ammeter that is proportional to the ambient temperature.
+The AnalogThermometer circuit is based around a Microchip MCP9700A temperature sensor. An LTC1541 op-amp is used as a differential amplifier to remove the 500mV offset voltage from the MCP9700A's output voltage. Finally, the differential amplifier controls a simple NPN current sink, whose current varies linearly with temperature; this drives the analog ammeter with a current that is proportional to the ambient temperature.
 
 Circuit Construction
 ====================
