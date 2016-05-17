@@ -5,7 +5,7 @@ A small, simple, low power circuit that turns practically any analog ammeter int
 
   * One inch square PCB size
   * Low cost (single quantity [components](./digikey_bom.csv): $7, OSHPark PCB: $5)
-  * Runs from a single 2.5-5.5V supply, typical current consumption <10uA (plus the analog ammeter's current requirements)
+  * Runs from a single 2.5-5.5V supply, typical current consumption <15uA (plus the analog ammeter's current requirements)
   * Easily adapted to work with nearly any ammeter by changing a single resistor, and/or adjusting a potentiometer
 
 3D rendering of the PCB design:
